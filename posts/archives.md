@@ -1,0 +1,17 @@
+---
+layout: default
+title: "归档：Archives"
+---
+<ul class="list-unstyled">
+     {% for post in site.posts %} 
+	 {% unless post.next %} 
+         <h2>{{ post.date | date: '%Y-%m' }}</h2> 
+	{% else %}
+	    {% capture year %}{{ post.date | date: '%Y-%m' }}{% endcapture %} {% capture nyear %}{{ post.next.date | date: '%Y-%m' }}{% endcapture %} 
+	{% if year != nyear %} 
+        <h2>{{ post.date | date: '%Y-%m' }}</h2> {% endif %} 
+	{% endunless %}
+	
+    <li><h4><span>{{ post.date | date:"%Y-%m-%d" }}</span>&raquo;<a href="{{ post.url }}">{{ post.title }}</a></h4></li> 
+	{% endfor %} 
+</ul> 
