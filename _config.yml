@@ -9,12 +9,12 @@ title: licch
 subtile: 记点东西，发发牢骚，排遣烦恼。
 name: "licch"
 
-url: https://licch.github.io/
-
+#url: https://licch.github.io/
 all_categories: [
 ["default", "默认","/posts/default.html"],
 ["archives", "存档", "/posts/archives.html"],
 ["about", "关于", "/about.html"],
+["timeline", "时间轴", "/timeline.html"],
 ]
 paginate: 5
 paginate_path: "posts/page:num"
