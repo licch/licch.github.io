@@ -13,6 +13,7 @@ name: "licch"
 all_categories: [
 ["default", "默认","/posts/default.html"],
 ["archives", "存档", "/posts/archives.html"],
+["suosuo", "说说", "/suosuo.html"],
 ["about", "关于", "/about.html"],
 ["timeline", "时间轴", "/timeline.html"],
 ]
